@@ -451,7 +451,7 @@ $.site.settings = {
     'api',
     'checkbox',
     'dimmer',
-    'dropdown',
+    'dropdownsemantic',
     'embed',
     'form',
     'modal',
@@ -681,8 +681,8 @@ $.fn.form = function(parameters) {
                 $prompt.remove();
               }
               if(isDropdown) {
-                module.verbose('Resetting dropdown value', $element, defaultValue);
-                $element.dropdown('clear');
+                module.verbose('Resetting dropdownsemantic value', $element, defaultValue);
+                $element.dropdownsemantic('clear');
               }
               else if(isCheckbox) {
                 $field.prop('checked', false);
@@ -717,8 +717,8 @@ $.fn.form = function(parameters) {
                 $prompt.remove();
               }
               if(isDropdown) {
-                module.verbose('Resetting dropdown value', $element, defaultValue);
-                $element.dropdown('restore defaults');
+                module.verbose('Resetting dropdownsemantic value', $element, defaultValue);
+                $element.dropdownsemantic('restore defaults');
               }
               else if(isCheckbox) {
                 module.verbose('Resetting checkbox value', $element, defaultValue);
@@ -1296,8 +1296,8 @@ $.fn.form = function(parameters) {
                   }
                 }
                 else if(isDropdown) {
-                  module.verbose('Setting dropdown value', value, $element);
-                  $element.dropdown('set selected', value);
+                  module.verbose('Setting dropdownsemantic value', value, $element);
+                  $element.dropdownsemantic('set selected', value);
                 }
                 else {
                   module.verbose('Setting field value', value, $field);
@@ -1689,7 +1689,7 @@ $.fn.form.settings = {
     reset      : '.reset:not([type="reset"])',
     submit     : '.submit:not([type="submit"])',
     uiCheckbox : '.ui.checkbox',
-    uiDropdown : '.ui.dropdown'
+    uiDropdown : '.ui.dropdownsemantic'
   },
 
   className : {
@@ -4276,7 +4276,7 @@ window = (typeof window != 'undefined' && window.Math == Math)
     : Function('return this')()
 ;
 
-$.fn.dropdown = function(parameters) {
+$.fn.dropdownsemantic = function(parameters) {
   var
     $allModules    = $(this),
     $document      = $(document),
@@ -4297,8 +4297,8 @@ $.fn.dropdown = function(parameters) {
     .each(function(elementIndex) {
       var
         settings          = ( $.isPlainObject(parameters) )
-          ? $.extend(true, {}, $.fn.dropdown.settings, parameters)
-          : $.extend({}, $.fn.dropdown.settings),
+          ? $.extend(true, {}, $.fn.dropdownsemantic.settings, parameters)
+          : $.extend({}, $.fn.dropdownsemantic.settings),
 
         className       = settings.className,
         message         = settings.message,
@@ -4348,7 +4348,7 @@ $.fn.dropdown = function(parameters) {
       module = {
 
         initialize: function() {
-          module.debug('Initializing dropdown', settings);
+          module.debug('Initializing dropdownsemantic', settings);
 
           if( module.is.alreadySetup() ) {
             module.setup.reference();
@@ -4370,7 +4370,7 @@ $.fn.dropdown = function(parameters) {
         },
 
         instantiate: function() {
-          module.verbose('Storing instance of dropdown', module);
+          module.verbose('Storing instance of dropdownsemantic', module);
           instance = module;
           $module
             .data(moduleNamespace, module)
@@ -4378,7 +4378,7 @@ $.fn.dropdown = function(parameters) {
         },
 
         destroy: function() {
-          module.verbose('Destroying previous dropdown', $module);
+          module.verbose('Destroying previous dropdownsemantic', $module);
           module.remove.tabbable();
           $module
             .off(eventNamespace)
@@ -4596,9 +4596,9 @@ $.fn.dropdown = function(parameters) {
               $input = $module;
             }
             // see if select is placed correctly already
-            if($input.parent(selector.dropdown).length > 0) {
-              module.debug('UI dropdown already exists. Creating dropdown menu only');
-              $module = $input.closest(selector.dropdown);
+            if($input.parent(selector.dropdownsemantic).length > 0) {
+              module.debug('UI dropdownsemantic already exists. Creating dropdownsemantic menu only');
+              $module = $input.closest(selector.dropdownsemantic);
               if( !module.has.menu() ) {
                 module.create.menu();
               }
@@ -4606,12 +4606,12 @@ $.fn.dropdown = function(parameters) {
               module.setup.menu(selectValues);
             }
             else {
-              module.debug('Creating entire dropdown from select');
+              module.debug('Creating entire dropdownsemantic from select');
               $module = $('<div />')
                 .attr('class', $input.attr('class') )
                 .addClass(className.selection)
-                .addClass(className.dropdown)
-                .html( templates.dropdown(selectValues) )
+                .addClass(className.dropdownsemantic)
+                .html( templates.dropdownsemantic(selectValues) )
                 .insertBefore($input)
               ;
               if($input.hasClass(className.multiple) && $input.prop('multiple') === false) {
@@ -4622,7 +4622,7 @@ $.fn.dropdown = function(parameters) {
                 module.set.multiple();
               }
               if ($input.prop('disabled')) {
-                module.debug('Disabling dropdown');
+                module.debug('Disabling dropdownsemantic');
                 $module.addClass(className.disabled);
               }
               $input
@@ -4638,9 +4638,9 @@ $.fn.dropdown = function(parameters) {
             $item = $menu.find(selector.item);
           },
           reference: function() {
-            module.debug('Dropdown behavior was called on select, replacing with closest dropdown');
+            module.debug('Dropdown behavior was called on select, replacing with closest dropdownsemantic');
             // replace module reference
-            $module = $module.parent(selector.dropdown);
+            $module = $module.parent(selector.dropdownsemantic);
             module.refresh();
             module.setup.returnedObject();
             // invoke method in context of current instance
@@ -4723,7 +4723,7 @@ $.fn.dropdown = function(parameters) {
             module.queryRemote(module.get.query(), module.show);
           }
           if( module.can.show() && !module.is.active() ) {
-            module.debug('Showing dropdown');
+            module.debug('Showing dropdownsemantic');
             if(module.has.message() && !(module.has.maxSelections() || module.has.allResultsFiltered()) ) {
               module.remove.message();
             }
@@ -4751,7 +4751,7 @@ $.fn.dropdown = function(parameters) {
             : function(){}
           ;
           if( module.is.active() ) {
-            module.debug('Hiding dropdown');
+            module.debug('Hiding dropdownsemantic');
             if(settings.onHide.call(element) !== false) {
               module.animate.hide(function() {
                 module.remove.visible();
@@ -4762,11 +4762,11 @@ $.fn.dropdown = function(parameters) {
         },
 
         hideOthers: function() {
-          module.verbose('Finding other dropdowns to hide');
+          module.verbose('Finding other dropdownsemantics to hide');
           $allModules
             .not($module)
               .has(selector.menu + '.' + className.visible)
-                .dropdown('hide')
+                .dropdownsemantic('hide')
           ;
         },
 
@@ -4950,7 +4950,7 @@ $.fn.dropdown = function(parameters) {
                   }
                 }
                 else {
-                  module.verbose('All items filtered, hiding dropdown', searchTerm);
+                  module.verbose('All items filtered, hiding dropdownsemantic', searchTerm);
                   module.hideMenu();
                 }
               }
@@ -5712,7 +5712,7 @@ $.fn.dropdown = function(parameters) {
 
                 // escape (close menu)
                 if(pressedKey == keys.escape) {
-                  module.verbose('Escape key pressed, closing dropdown');
+                  module.verbose('Escape key pressed, closing dropdownsemantic');
                   module.hide();
                 }
 
@@ -5724,7 +5724,7 @@ $.fn.dropdown = function(parameters) {
                 }
                 // down arrow (open menu)
                 if(pressedKey == keys.downArrow && !module.is.visible()) {
-                  module.verbose('Down key pressed, showing dropdown');
+                  module.verbose('Down key pressed, showing dropdownsemantic');
                   module.select.firstUnfiltered();
                   module.show();
                   event.preventDefault();
@@ -5784,7 +5784,7 @@ $.fn.dropdown = function(parameters) {
               return true;
             }
             else {
-              module.verbose('Event occurred in dropdown, canceling callback');
+              module.verbose('Event occurred in dropdownsemantic, canceling callback');
               return false;
             }
           },
@@ -5806,7 +5806,7 @@ $.fn.dropdown = function(parameters) {
               return true;
             }
             else {
-              module.verbose('Event occurred in dropdown menu, canceling callback');
+              module.verbose('Event occurred in dropdownsemantic menu, canceling callback');
               return false;
             }
           }
@@ -6163,7 +6163,7 @@ $.fn.dropdown = function(parameters) {
                     }
                   }
                   else if(strict) {
-                    module.verbose('Ambiguous dropdown value using strict type check', $choice, value);
+                    module.verbose('Ambiguous dropdownsemantic value using strict type check', $choice, value);
                     if( optionValue === value || optionText === value) {
                       $selectedItem = $choice;
                       return true;
@@ -6464,7 +6464,7 @@ $.fn.dropdown = function(parameters) {
           },
           tabbable: function() {
             if( module.is.searchSelection() ) {
-              module.debug('Added tabindex to searchable dropdown');
+              module.debug('Added tabindex to searchable dropdownsemantic');
               $search
                 .val('')
                 .attr('tabindex', 0)
@@ -6474,7 +6474,7 @@ $.fn.dropdown = function(parameters) {
               ;
             }
             else {
-              module.debug('Added tabindex to dropdown');
+              module.debug('Added tabindex to dropdownsemantic');
               if( $module.attr('tabindex') === undefined) {
                 $module
                   .attr('tabindex', 0)
@@ -7171,7 +7171,7 @@ $.fn.dropdown = function(parameters) {
           },
           tabbable: function() {
             if( module.is.searchSelection() ) {
-              module.debug('Searchable dropdown initialized');
+              module.debug('Searchable dropdownsemantic initialized');
               $search
                 .removeAttr('tabindex')
               ;
@@ -7180,7 +7180,7 @@ $.fn.dropdown = function(parameters) {
               ;
             }
             else {
-              module.debug('Simple selection dropdown initialized');
+              module.debug('Simple selection dropdownsemantic initialized');
               $module
                 .removeAttr('tabindex')
               ;
@@ -7286,7 +7286,7 @@ $.fn.dropdown = function(parameters) {
             return $(event.target).closest($icon).length > 0;
           },
           alreadySetup: function() {
-            return ($module.is('select') && $module.parent(selector.dropdown).length > 0  && $module.prev().length === 0);
+            return ($module.is('select') && $module.parent(selector.dropdownsemantic).length > 0  && $module.prev().length === 0);
           },
           animating: function($subMenu) {
             return ($subMenu)
@@ -7389,7 +7389,7 @@ $.fn.dropdown = function(parameters) {
             return $module.hasClass(className.search);
           },
           searchSelection: function() {
-            return ( module.has.search() && $search.parent(selector.dropdown).length === 1 );
+            return ( module.has.search() && $search.parent(selector.dropdownsemantic).length === 1 );
           },
           selection: function() {
             return $module.hasClass(className.selection);
@@ -7784,7 +7784,7 @@ $.fn.dropdown = function(parameters) {
   ;
 };
 
-$.fn.dropdown.settings = {
+$.fn.dropdownsemantic.settings = {
 
   silent                 : false,
   debug                  : false,
@@ -7805,8 +7805,8 @@ $.fn.dropdown.settings = {
   throttle               : 200,        // How long to wait after last user input to search remotely
 
   context                : window,     // Context to use when determining if on screen
-  direction              : 'auto',     // Whether dropdown should always open in one direction
-  keepOnScreen           : true,       // Whether dropdown should check whether it is on screen before showing
+  direction              : 'auto',     // Whether dropdownsemantic should always open in one direction
+  keepOnScreen           : true,       // Whether dropdownsemantic should check whether it is on screen before showing
 
   match                  : 'both',     // what to match against with search selection (both, text, or label)
   fullTextSearch         : false,      // search anywhere in value (set to 'exact' to require exact matches)
@@ -7829,7 +7829,7 @@ $.fn.dropdown.settings = {
   allowTab               : true,       // add tabindex to element
   allowCategorySelection : false,      // allow elements with sub-menus to be selected
 
-  fireOnInit             : false,      // Whether callbacks should fire when initializing dropdown values
+  fireOnInit             : false,      // Whether callbacks should fire when initializing dropdownsemantic values
 
   transition             : 'auto',     // auto transition will slide down or up based on direction
   duration               : 200,        // duration of transition
@@ -7865,7 +7865,7 @@ $.fn.dropdown.settings = {
 
   /* Component */
   name           : 'Dropdown',
-  namespace      : 'dropdown',
+  namespace      : 'dropdownsemantic',
 
   message: {
     addResult     : 'Add <b>{term}</b>',
@@ -7876,8 +7876,8 @@ $.fn.dropdown.settings = {
   },
 
   error : {
-    action          : 'You called a dropdown action that was not defined',
-    alreadySetup    : 'Once a select has been initialized behaviors must be called on the created ui dropdown',
+    action          : 'You called a dropdownsemantic action that was not defined',
+    alreadySetup    : 'Once a select has been initialized behaviors must be called on the created ui dropdownsemantic',
     labels          : 'Allowing user additions currently requires the use of labels.',
     missingMultiple : '<select> requires multiple property to be set to correctly preserve multiple values',
     method          : 'The method you called is not defined.',
@@ -7902,10 +7902,10 @@ $.fn.dropdown.settings = {
   // property names for remote query
   fields: {
     remoteValues : 'results',  // grouping for api results
-    values       : 'values',   // grouping for all dropdown values
+    values       : 'values',   // grouping for all dropdownsemantic values
     disabled     : 'disabled', // whether value should be disabled
-    name         : 'name',     // displayed dropdown text
-    value        : 'value',    // actual dropdown value
+    name         : 'name',     // displayed dropdownsemantic text
+    value        : 'value',    // actual dropdownsemantic value
     text         : 'text'      // displayed text when selected
   },
 
@@ -7925,9 +7925,9 @@ $.fn.dropdown.settings = {
 
   selector : {
     addition     : '.addition',
-    dropdown     : '.ui.dropdown',
+    dropdownsemantic     : '.ui.dropdownsemantic',
     hidden       : '.hidden',
-    icon         : '> .dropdown.icon',
+    icon         : '> .dropdownsemantic.icon',
     input        : '> input[type="hidden"], > select',
     item         : '.item',
     label        : '> .label',
@@ -7935,7 +7935,7 @@ $.fn.dropdown.settings = {
     siblingLabel : '.label',
     menu         : '.menu',
     message      : '.message',
-    menuIcon     : '.dropdown.icon',
+    menuIcon     : '.dropdownsemantic.icon',
     search       : 'input.search, .menu > .search > input, .menu input.search',
     sizer        : '> input.sizer',
     text         : '> .text:not(.icon)',
@@ -7948,7 +7948,7 @@ $.fn.dropdown.settings = {
     animating   : 'animating',
     disabled    : 'disabled',
     empty       : 'empty',
-    dropdown    : 'ui dropdown',
+    dropdownsemantic    : 'ui dropdownsemantic',
     filtered    : 'filtered',
     hidden      : 'hidden transition',
     item        : 'item',
@@ -7969,16 +7969,16 @@ $.fn.dropdown.settings = {
 };
 
 /* Templates */
-$.fn.dropdown.settings.templates = {
+$.fn.dropdownsemantic.settings.templates = {
 
-  // generates dropdown from select values
-  dropdown: function(select) {
+  // generates dropdownsemantic from select values
+  dropdownsemantic: function(select) {
     var
       placeholder = select.placeholder || false,
       values      = select.values || {},
       html        = ''
     ;
-    html +=  '<i class="dropdown icon"></i>';
+    html +=  '<i class="dropdownsemantic icon"></i>';
     if(select.placeholder) {
       html += '<div class="default text">' + placeholder + '</div>';
     }
@@ -10489,7 +10489,7 @@ $.fn.popup = function(parameters) {
         show: function(callback) {
           callback = callback || function(){};
           module.debug('Showing pop-up', settings.transition);
-          if(module.is.hidden() && !( module.is.active() && module.is.dropdown()) ) {
+          if(module.is.hidden() && !( module.is.active() && module.is.dropdownsemantic()) ) {
             if( !module.exists() ) {
               module.create();
             }
@@ -11237,8 +11237,8 @@ $.fn.popup = function(parameters) {
           visible: function() {
             return ($popup !== undefined && $popup.hasClass(className.visible));
           },
-          dropdown: function() {
-            return $module.hasClass(className.dropdown);
+          dropdownsemantic: function() {
+            return $module.hasClass(className.dropdownsemantic);
           },
           hidden: function() {
             return !module.is.visible();
@@ -11583,7 +11583,7 @@ $.fn.popup.settings = {
   className   : {
     active    : 'active',
     animating : 'animating',
-    dropdown  : 'dropdown',
+    dropdownsemantic  : 'dropdownsemantic',
     fluid     : 'fluid',
     loading   : 'loading',
     popup     : 'ui popup',

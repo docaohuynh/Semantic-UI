@@ -1339,11 +1339,11 @@ input::selection {
   color: '';
 }
 
-.ui.button:not(.icon) > .icon:not(.button):not(.dropdown) {
+.ui.button:not(.icon) > .icon:not(.button):not(.dropdownsemantic) {
   margin: 0em 0.42857143em 0em -0.21428571em;
 }
 
-.ui.button:not(.icon) > .right.icon:not(.button):not(.dropdown) {
+.ui.button:not(.icon) > .right.icon:not(.button):not(.dropdownsemantic) {
   margin: 0em -0.21428571em 0em 0.42857143em;
 }
 
@@ -10773,7 +10773,7 @@ i.icon.triangle.down:before {
   content: "\f0d7";
 }
 
-i.icon.dropdown:before {
+i.icon.dropdownsemantic:before {
   content: "\f0d7";
 }
 
@@ -12175,13 +12175,13 @@ img.ui.bordered.image {
   border-right-color: transparent !important;
 }
 
-.ui.action.input:not([class*="left action"]) > .dropdown:not(:first-child),
+.ui.action.input:not([class*="left action"]) > .dropdownsemantic:not(:first-child),
 .ui.action.input:not([class*="left action"]) > .button:not(:first-child),
 .ui.action.input:not([class*="left action"]) > .buttons:not(:first-child) > .button {
   border-radius: 0px;
 }
 
-.ui.action.input:not([class*="left action"]) > .dropdown:last-child,
+.ui.action.input:not([class*="left action"]) > .dropdownsemantic:last-child,
 .ui.action.input:not([class*="left action"]) > .button:last-child,
 .ui.action.input:not([class*="left action"]) > .buttons:last-child > .button {
   border-radius: 0px 0.28571429rem 0.28571429rem 0px;
@@ -12201,13 +12201,13 @@ img.ui.bordered.image {
   border-left-color: transparent !important;
 }
 
-.ui[class*="left action"].input > .dropdown,
+.ui[class*="left action"].input > .dropdownsemantic,
 .ui[class*="left action"].input > .button,
 .ui[class*="left action"].input > .buttons > .button {
   border-radius: 0px;
 }
 
-.ui[class*="left action"].input > .dropdown:first-child,
+.ui[class*="left action"].input > .dropdownsemantic:first-child,
 .ui[class*="left action"].input > .button:first-child,
 .ui[class*="left action"].input > .buttons:first-child > .button {
   border-radius: 0.28571429rem 0px 0px 0.28571429rem;
@@ -12808,7 +12808,7 @@ a.ui.active.label:ActiveHover:before {
 --------------------*/
 
 .ui.labels.visible .label,
-.ui.label.visible:not(.dropdown) {
+.ui.label.visible:not(.dropdownsemantic) {
   display: inline-block !important;
 }
 
@@ -17540,23 +17540,23 @@ ol.ui.horizontal.list li:before,
 
 /* Block */
 
-.ui.form .field > .selection.dropdown {
+.ui.form .field > .selection.dropdownsemantic {
   width: 100%;
 }
 
-.ui.form .field > .selection.dropdown > .dropdown.icon {
+.ui.form .field > .selection.dropdownsemantic > .dropdownsemantic.icon {
   float: right;
 }
 
 /* Inline */
 
-.ui.form .inline.fields .field > .selection.dropdown,
-.ui.form .inline.field > .selection.dropdown {
+.ui.form .inline.fields .field > .selection.dropdownsemantic,
+.ui.form .inline.field > .selection.dropdownsemantic {
   width: auto;
 }
 
-.ui.form .inline.fields .field > .selection.dropdown > .dropdown.icon,
-.ui.form .inline.field > .selection.dropdown > .dropdown.icon {
+.ui.form .inline.fields .field > .selection.dropdownsemantic > .dropdownsemantic.icon,
+.ui.form .inline.field > .selection.dropdownsemantic > .dropdownsemantic.icon {
   float: none;
 }
 
@@ -17907,54 +17907,54 @@ ol.ui.horizontal.list li:before,
     Dropdown Error
 --------------------*/
 
-.ui.form .fields.error .field .ui.dropdown,
-.ui.form .fields.error .field .ui.dropdown .item,
-.ui.form .field.error .ui.dropdown,
-.ui.form .field.error .ui.dropdown .text,
-.ui.form .field.error .ui.dropdown .item {
+.ui.form .fields.error .field .ui.dropdownsemantic,
+.ui.form .fields.error .field .ui.dropdownsemantic .item,
+.ui.form .field.error .ui.dropdownsemantic,
+.ui.form .field.error .ui.dropdownsemantic .text,
+.ui.form .field.error .ui.dropdownsemantic .item {
   background: #FFF6F6;
   color: #9F3A38;
 }
 
-.ui.form .fields.error .field .ui.dropdown,
-.ui.form .field.error .ui.dropdown {
+.ui.form .fields.error .field .ui.dropdownsemantic,
+.ui.form .field.error .ui.dropdownsemantic {
   border-color: #E0B4B4 !important;
 }
 
-.ui.form .fields.error .field .ui.dropdown:hover,
-.ui.form .field.error .ui.dropdown:hover {
+.ui.form .fields.error .field .ui.dropdownsemantic:hover,
+.ui.form .field.error .ui.dropdownsemantic:hover {
   border-color: #E0B4B4 !important;
 }
 
-.ui.form .fields.error .field .ui.dropdown:hover .menu,
-.ui.form .field.error .ui.dropdown:hover .menu {
+.ui.form .fields.error .field .ui.dropdownsemantic:hover .menu,
+.ui.form .field.error .ui.dropdownsemantic:hover .menu {
   border-color: #E0B4B4;
 }
 
-.ui.form .fields.error .field .ui.multiple.selection.dropdown > .label,
-.ui.form .field.error .ui.multiple.selection.dropdown > .label {
+.ui.form .fields.error .field .ui.multiple.selection.dropdownsemantic > .label,
+.ui.form .field.error .ui.multiple.selection.dropdownsemantic > .label {
   background-color: #EACBCB;
   color: #9F3A38;
 }
 
 /* Hover */
 
-.ui.form .fields.error .field .ui.dropdown .menu .item:hover,
-.ui.form .field.error .ui.dropdown .menu .item:hover {
+.ui.form .fields.error .field .ui.dropdownsemantic .menu .item:hover,
+.ui.form .field.error .ui.dropdownsemantic .menu .item:hover {
   background-color: #FBE7E7;
 }
 
 /* Selected */
 
-.ui.form .fields.error .field .ui.dropdown .menu .selected.item,
-.ui.form .field.error .ui.dropdown .menu .selected.item {
+.ui.form .fields.error .field .ui.dropdownsemantic .menu .selected.item,
+.ui.form .field.error .ui.dropdownsemantic .menu .selected.item {
   background-color: #FBE7E7;
 }
 
 /* Active */
 
-.ui.form .fields.error .field .ui.dropdown .menu .active.item,
-.ui.form .field.error .ui.dropdown .menu .active.item {
+.ui.form .fields.error .field .ui.dropdownsemantic .menu .active.item,
+.ui.form .field.error .ui.dropdownsemantic .menu .active.item {
   background-color: #FDCFCF !important;
 }
 
@@ -21066,7 +21066,7 @@ ol.ui.horizontal.list li:before,
 
 /* Dropdown Icon */
 
-.ui.menu .item > i.dropdown.icon {
+.ui.menu .item > i.dropdownsemantic.icon {
   padding: 0em;
   float: right;
   margin: 0em 0em 0em 1em;
@@ -21074,7 +21074,7 @@ ol.ui.horizontal.list li:before,
 
 /* Menu */
 
-.ui.menu .dropdown.item .menu {
+.ui.menu .dropdownsemantic.item .menu {
   left: 0px;
   min-width: calc(100% - 1px);
   border-radius: 0em 0em 0.28571429rem 0.28571429rem;
@@ -21090,7 +21090,7 @@ ol.ui.horizontal.list li:before,
 
 /* Menu Items */
 
-.ui.menu .ui.dropdown .menu > .item {
+.ui.menu .ui.dropdownsemantic .menu > .item {
   margin: 0;
   text-align: left;
   font-size: 1em !important;
@@ -21104,27 +21104,27 @@ ol.ui.horizontal.list li:before,
   transition: none !important;
 }
 
-.ui.menu .ui.dropdown .menu > .item:hover {
+.ui.menu .ui.dropdownsemantic .menu > .item:hover {
   background: rgba(0, 0, 0, 0.05) !important;
   color: rgba(0, 0, 0, 0.95) !important;
 }
 
-.ui.menu .ui.dropdown .menu > .selected.item {
+.ui.menu .ui.dropdownsemantic .menu > .selected.item {
   background: rgba(0, 0, 0, 0.05) !important;
   color: rgba(0, 0, 0, 0.95) !important;
 }
 
-.ui.menu .ui.dropdown .menu > .active.item {
+.ui.menu .ui.dropdownsemantic .menu > .active.item {
   background: rgba(0, 0, 0, 0.03) !important;
   font-weight: bold !important;
   color: rgba(0, 0, 0, 0.95) !important;
 }
 
-.ui.menu .ui.dropdown.item .menu .item:not(.filtered) {
+.ui.menu .ui.dropdownsemantic.item .menu .item:not(.filtered) {
   display: block;
 }
 
-.ui.menu .ui.dropdown .menu > .item .icon:not(.dropdown) {
+.ui.menu .ui.dropdownsemantic .menu > .item .icon:not(.dropdownsemantic) {
   display: inline-block;
   font-size: 1em !important;
   float: none;
@@ -21133,34 +21133,34 @@ ol.ui.horizontal.list li:before,
 
 /* Secondary */
 
-.ui.secondary.menu .dropdown.item > .menu,
-.ui.text.menu .dropdown.item > .menu {
+.ui.secondary.menu .dropdownsemantic.item > .menu,
+.ui.text.menu .dropdownsemantic.item > .menu {
   border-radius: 0.28571429rem;
   margin-top: 0.35714286em;
 }
 
 /* Pointing */
 
-.ui.menu .pointing.dropdown.item .menu {
+.ui.menu .pointing.dropdownsemantic.item .menu {
   margin-top: 0.75em;
 }
 
 /* Inverted */
 
-.ui.inverted.menu .search.dropdown.item > .search,
-.ui.inverted.menu .search.dropdown.item > .text {
+.ui.inverted.menu .search.dropdownsemantic.item > .search,
+.ui.inverted.menu .search.dropdownsemantic.item > .text {
   color: rgba(255, 255, 255, 0.9);
 }
 
 /* Vertical */
 
-.ui.vertical.menu .dropdown.item > .icon {
+.ui.vertical.menu .dropdownsemantic.item > .icon {
   float: right;
   content: "\f0da";
   margin-left: 1em;
 }
 
-.ui.vertical.menu .dropdown.item .menu {
+.ui.vertical.menu .dropdownsemantic.item .menu {
   left: 100%;
   min-width: 0;
   margin: 0em 0em 0em 0em;
@@ -21168,26 +21168,26 @@ ol.ui.horizontal.list li:before,
   border-radius: 0em 0.28571429rem 0.28571429rem 0.28571429rem;
 }
 
-.ui.vertical.menu .dropdown.item.upward .menu {
+.ui.vertical.menu .dropdownsemantic.item.upward .menu {
   bottom: 0;
 }
 
-.ui.vertical.menu .dropdown.item:not(.upward) .menu {
+.ui.vertical.menu .dropdownsemantic.item:not(.upward) .menu {
   top: 0;
 }
 
-.ui.vertical.menu .active.dropdown.item {
+.ui.vertical.menu .active.dropdownsemantic.item {
   border-top-right-radius: 0em;
   border-bottom-right-radius: 0em;
 }
 
-.ui.vertical.menu .dropdown.active.item {
+.ui.vertical.menu .dropdownsemantic.active.item {
   box-shadow: none;
 }
 
 /* Evenly Divided */
 
-.ui.item.menu .dropdown .menu .item {
+.ui.item.menu .dropdownsemantic .menu .item {
   width: 100%;
 }
 
@@ -21277,7 +21277,7 @@ ol.ui.horizontal.list li:before,
 ---------------*/
 
 .ui.link.menu .item:hover,
-.ui.menu .dropdown.item:hover,
+.ui.menu .dropdownsemantic.item:hover,
 .ui.menu .link.item:hover,
 .ui.menu a.item:hover {
   cursor: pointer;
@@ -21638,7 +21638,7 @@ Floated Menu / Item
 
 /* Dropdown */
 
-.ui.tabular.menu .active.dropdown.item {
+.ui.tabular.menu .active.dropdownsemantic.item {
   margin-bottom: 0px;
   border-left: 1px solid transparent;
   border-right: 1px solid transparent;
@@ -21741,7 +21741,7 @@ Floated Menu / Item
 
 /* Hover */
 
-.ui.secondary.menu .dropdown.item:hover,
+.ui.secondary.menu .dropdownsemantic.item:hover,
 .ui.secondary.menu .link.item:hover,
 .ui.secondary.menu a.item:hover {
   background: rgba(0, 0, 0, 0.05);
@@ -21772,7 +21772,7 @@ Floated Menu / Item
   color: rgba(255, 255, 255, 0.7) !important;
 }
 
-.ui.secondary.inverted.menu .dropdown.item:hover,
+.ui.secondary.inverted.menu .dropdownsemantic.item:hover,
 .ui.secondary.inverted.menu .link.item:hover,
 .ui.secondary.inverted.menu a.item:hover {
   background: rgba(255, 255, 255, 0.08);
@@ -21801,11 +21801,11 @@ Floated Menu / Item
 
 /* Sub Menu */
 
-.ui.vertical.secondary.menu .item:not(.dropdown) > .menu {
+.ui.vertical.secondary.menu .item:not(.dropdownsemantic) > .menu {
   margin: 0em -0.92857143em;
 }
 
-.ui.vertical.secondary.menu .item:not(.dropdown) > .menu > .item {
+.ui.vertical.secondary.menu .item:not(.dropdownsemantic) > .menu > .item {
   margin: 0em;
   padding: 0.5em 1.33333333em;
 }
@@ -21876,7 +21876,7 @@ Floated Menu / Item
 
 /* Hover */
 
-.ui.secondary.pointing.menu .dropdown.item:hover,
+.ui.secondary.pointing.menu .dropdownsemantic.item:hover,
 .ui.secondary.pointing.menu .link.item:hover,
 .ui.secondary.pointing.menu a.item:hover {
   background-color: transparent;
@@ -21885,7 +21885,7 @@ Floated Menu / Item
 
 /* Pressed */
 
-.ui.secondary.pointing.menu .dropdown.item:active,
+.ui.secondary.pointing.menu .dropdownsemantic.item:active,
 .ui.secondary.pointing.menu .link.item:active,
 .ui.secondary.pointing.menu a.item:active {
   background-color: transparent;
@@ -21911,7 +21911,7 @@ Floated Menu / Item
 
 /* Active Dropdown */
 
-.ui.secondary.pointing.menu .active.dropdown.item {
+.ui.secondary.pointing.menu .active.dropdownsemantic.item {
   border-color: transparent;
 }
 
@@ -22059,11 +22059,11 @@ Floated Menu / Item
 
 /* Vertical Sub Menu */
 
-.ui.vertical.text.menu .item:not(.dropdown) > .menu {
+.ui.vertical.text.menu .item:not(.dropdownsemantic) > .menu {
   margin: 0em;
 }
 
-.ui.vertical.text.menu .item:not(.dropdown) > .menu > .item {
+.ui.vertical.text.menu .item:not(.dropdownsemantic) > .menu > .item {
   margin: 0em;
   padding: 0.5em 0em;
 }
@@ -22138,7 +22138,7 @@ Floated Menu / Item
 
 /* Icon */
 
-.ui.icon.menu .item > .icon:not(.dropdown) {
+.ui.icon.menu .item > .icon:not(.dropdownsemantic) {
   margin: 0;
   opacity: 1;
 }
@@ -22158,7 +22158,7 @@ Floated Menu / Item
 
 /* Vertical Icon */
 
-.ui.vertical.icon.menu .item > .icon:not(.dropdown) {
+.ui.vertical.icon.menu .item > .icon:not(.dropdownsemantic) {
   display: block;
   opacity: 1;
   margin: 0em auto;
@@ -22194,7 +22194,7 @@ Floated Menu / Item
 
 /* Icon */
 
-.ui.labeled.icon.menu .item > .icon:not(.dropdown) {
+.ui.labeled.icon.menu .item > .icon:not(.dropdownsemantic) {
   height: 1em;
   display: block;
   font-size: 1.71428571em !important;
@@ -22385,7 +22385,7 @@ Floated Menu / Item
 /*--- Hover ---*/
 
 .ui.link.inverted.menu .item:hover,
-.ui.inverted.menu .dropdown.item:hover,
+.ui.inverted.menu .dropdownsemantic.item:hover,
 .ui.inverted.menu .link.item:hover,
 .ui.inverted.menu a.item:hover {
   background: rgba(255, 255, 255, 0.08);
@@ -22895,13 +22895,13 @@ Floated Menu / Item
   visibility: visible;
 }
 
-.ui.pointing.menu .active.dropdown.item:after {
+.ui.pointing.menu .active.dropdownsemantic.item:after {
   visibility: hidden;
 }
 
 /* Don't double up pointers */
 
-.ui.pointing.menu .dropdown.active.item:after,
+.ui.pointing.menu .dropdownsemantic.active.item:after,
 .ui.pointing.menu .active.item .menu .active.item:after {
   display: none;
 }
@@ -23246,7 +23246,7 @@ Floated Menu / Item
             Coupling
 *******************************/
 
-.ui.dropdown .menu > .message {
+.ui.dropdownsemantic .menu > .message {
   margin: 0px -1px;
 }
 
@@ -28122,8 +28122,8 @@ a.ui.card:hover,
 
 /* Arrow */
 
-.ui.accordion .title .dropdown.icon,
-.ui.accordion .accordion .title .dropdown.icon {
+.ui.accordion .title .dropdownsemantic.icon,
+.ui.accordion .accordion .title .dropdownsemantic.icon {
   display: inline-block;
   float: none;
   opacity: 1;
@@ -28152,7 +28152,7 @@ a.ui.card:hover,
   padding: 0em;
 }
 
-.ui.accordion.menu .item .title > .dropdown.icon {
+.ui.accordion.menu .item .title > .dropdownsemantic.icon {
   float: right;
   margin: 0.21425em 0em 0em 1em;
   -webkit-transform: rotate(180deg);
@@ -28161,7 +28161,7 @@ a.ui.card:hover,
 
 /* Header */
 
-.ui.accordion .ui.header .dropdown.icon {
+.ui.accordion .ui.header .dropdownsemantic.icon {
   font-size: 1em;
   margin: 0em 0.25rem 0em 0rem;
 }
@@ -28170,13 +28170,13 @@ a.ui.card:hover,
             States
 *******************************/
 
-.ui.accordion .active.title .dropdown.icon,
-.ui.accordion .accordion .active.title .dropdown.icon {
+.ui.accordion .active.title .dropdownsemantic.icon,
+.ui.accordion .accordion .active.title .dropdownsemantic.icon {
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
 }
 
-.ui.accordion.menu .item .active.title > .dropdown.icon {
+.ui.accordion.menu .item .active.title > .dropdownsemantic.icon {
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
 }
@@ -28304,8 +28304,8 @@ a.ui.card:hover,
 
 /* Dropdown Icon */
 
-.ui.accordion .title .dropdown.icon,
-.ui.accordion .accordion .title .dropdown.icon {
+.ui.accordion .title .dropdownsemantic.icon,
+.ui.accordion .accordion .title .dropdownsemantic.icon {
   font-family: Accordion;
   line-height: 1;
   -webkit-backface-visibility: hidden;
@@ -28315,8 +28315,8 @@ a.ui.card:hover,
   text-align: center;
 }
 
-.ui.accordion .title .dropdown.icon:before,
-.ui.accordion .accordion .title .dropdown.icon:before {
+.ui.accordion .title .dropdownsemantic.icon:before,
+.ui.accordion .accordion .title .dropdownsemantic.icon:before {
   content: '\f0da' ;
 }
 
@@ -29211,7 +29211,7 @@ body.dimmable > .dimmer {
             Dropdown
 *******************************/
 
-.ui.dropdown {
+.ui.dropdownsemantic {
   cursor: pointer;
   position: relative;
   display: inline-block;
@@ -29230,7 +29230,7 @@ body.dimmable > .dimmer {
       Menu
 ---------------*/
 
-.ui.dropdown .menu {
+.ui.dropdownsemantic .menu {
   cursor: auto;
   position: absolute;
   display: none;
@@ -29254,7 +29254,7 @@ body.dimmable > .dimmer {
   will-change: transform, opacity;
 }
 
-.ui.dropdown .menu > * {
+.ui.dropdownsemantic .menu > * {
   white-space: nowrap;
 }
 
@@ -29262,8 +29262,8 @@ body.dimmable > .dimmer {
   Hidden Input
 ---------------*/
 
-.ui.dropdown > input:not(.search):first-child,
-.ui.dropdown > select {
+.ui.dropdownsemantic > input:not(.search):first-child,
+.ui.dropdownsemantic > select {
   display: none !important;
 }
 
@@ -29271,20 +29271,20 @@ body.dimmable > .dimmer {
  Dropdown Icon
 ---------------*/
 
-.ui.dropdown > .dropdown.icon {
+.ui.dropdownsemantic > .dropdownsemantic.icon {
   position: relative;
   width: auto;
   font-size: 0.85714286em;
   margin: 0em 0em 0em 1em;
 }
 
-.ui.dropdown .menu > .item .dropdown.icon {
+.ui.dropdownsemantic .menu > .item .dropdownsemantic.icon {
   width: auto;
   float: right;
   margin: 0em 0em 0em 1em;
 }
 
-.ui.dropdown .menu > .item .dropdown.icon + .text {
+.ui.dropdownsemantic .menu > .item .dropdownsemantic.icon + .text {
   margin-right: 1em;
 }
 
@@ -29292,7 +29292,7 @@ body.dimmable > .dimmer {
       Text
 ---------------*/
 
-.ui.dropdown > .text {
+.ui.dropdownsemantic > .text {
   display: inline-block;
   -webkit-transition: none;
   transition: none;
@@ -29302,7 +29302,7 @@ body.dimmable > .dimmer {
     Menu Item
 ---------------*/
 
-.ui.dropdown .menu > .item {
+.ui.dropdownsemantic .menu > .item {
   position: relative;
   cursor: pointer;
   display: block;
@@ -29320,7 +29320,7 @@ body.dimmable > .dimmer {
   -webkit-touch-callout: none;
 }
 
-.ui.dropdown .menu > .item:first-child {
+.ui.dropdownsemantic .menu > .item:first-child {
   border-top-width: 0px;
 }
 
@@ -29328,24 +29328,24 @@ body.dimmable > .dimmer {
   Floated Content
 ---------------*/
 
-.ui.dropdown > .text > [class*="right floated"],
-.ui.dropdown .menu .item > [class*="right floated"] {
+.ui.dropdownsemantic > .text > [class*="right floated"],
+.ui.dropdownsemantic .menu .item > [class*="right floated"] {
   float: right !important;
   margin-right: 0em !important;
   margin-left: 1em !important;
 }
 
-.ui.dropdown > .text > [class*="left floated"],
-.ui.dropdown .menu .item > [class*="left floated"] {
+.ui.dropdownsemantic > .text > [class*="left floated"],
+.ui.dropdownsemantic .menu .item > [class*="left floated"] {
   float: left !important;
   margin-left: 0em !important;
   margin-right: 1em !important;
 }
 
-.ui.dropdown .menu .item > .icon.floated,
-.ui.dropdown .menu .item > .flag.floated,
-.ui.dropdown .menu .item > .image.floated,
-.ui.dropdown .menu .item > img.floated {
+.ui.dropdownsemantic .menu .item > .icon.floated,
+.ui.dropdownsemantic .menu .item > .flag.floated,
+.ui.dropdownsemantic .menu .item > .image.floated,
+.ui.dropdownsemantic .menu .item > img.floated {
   margin-top: 0em;
 }
 
@@ -29353,7 +29353,7 @@ body.dimmable > .dimmer {
   Menu Divider
 ---------------*/
 
-.ui.dropdown .menu > .header {
+.ui.dropdownsemantic .menu > .header {
   margin: 1rem 0rem 0.75rem;
   padding: 0em 1.14285714rem;
   color: rgba(0, 0, 0, 0.85);
@@ -29362,13 +29362,13 @@ body.dimmable > .dimmer {
   text-transform: uppercase;
 }
 
-.ui.dropdown .menu > .divider {
+.ui.dropdownsemantic .menu > .divider {
   border-top: 1px solid rgba(34, 36, 38, 0.1);
   height: 0em;
   margin: 0.5em 0em;
 }
 
-.ui.dropdown .menu > .input {
+.ui.dropdownsemantic .menu > .input {
   width: auto;
   display: -webkit-box;
   display: -webkit-flex;
@@ -29378,17 +29378,17 @@ body.dimmable > .dimmer {
   min-width: 10rem;
 }
 
-.ui.dropdown .menu > .header + .input {
+.ui.dropdownsemantic .menu > .header + .input {
   margin-top: 0em;
 }
 
-.ui.dropdown .menu > .input:not(.transparent) input {
+.ui.dropdownsemantic .menu > .input:not(.transparent) input {
   padding: 0.5em 1em;
 }
 
-.ui.dropdown .menu > .input:not(.transparent) .button,
-.ui.dropdown .menu > .input:not(.transparent) .icon,
-.ui.dropdown .menu > .input:not(.transparent) .label {
+.ui.dropdownsemantic .menu > .input:not(.transparent) .button,
+.ui.dropdownsemantic .menu > .input:not(.transparent) .icon,
+.ui.dropdownsemantic .menu > .input:not(.transparent) .label {
   padding-top: 0.5em;
   padding-bottom: 0.5em;
 }
@@ -29397,8 +29397,8 @@ body.dimmable > .dimmer {
   Item Description
 -------------------*/
 
-.ui.dropdown > .text > .description,
-.ui.dropdown .menu > .item > .description {
+.ui.dropdownsemantic > .text > .description,
+.ui.dropdownsemantic .menu > .item > .description {
   float: right;
   margin: 0em 0em 0em 1em;
   color: rgba(0, 0, 0, 0.4);
@@ -29408,12 +29408,12 @@ body.dimmable > .dimmer {
        Message
 -------------------*/
 
-.ui.dropdown .menu > .message {
+.ui.dropdownsemantic .menu > .message {
   padding: 0.78571429rem 1.14285714rem;
   font-weight: normal;
 }
 
-.ui.dropdown .menu > .message:not(.ui) {
+.ui.dropdownsemantic .menu > .message:not(.ui) {
   color: rgba(0, 0, 0, 0.4);
 }
 
@@ -29421,7 +29421,7 @@ body.dimmable > .dimmer {
     Sub Menu
 ---------------*/
 
-.ui.dropdown .menu .menu {
+.ui.dropdownsemantic .menu .menu {
   top: 0% !important;
   left: 100% !important;
   right: auto !important;
@@ -29432,7 +29432,7 @@ body.dimmable > .dimmer {
 
 /* Hide Arrow */
 
-.ui.dropdown .menu .menu:after {
+.ui.dropdownsemantic .menu .menu:after {
   display: none;
 }
 
@@ -29442,32 +29442,32 @@ body.dimmable > .dimmer {
 
 /* Icons / Flags / Labels / Image */
 
-.ui.dropdown > .text > .icon,
-.ui.dropdown > .text > .label,
-.ui.dropdown > .text > .flag,
-.ui.dropdown > .text > img,
-.ui.dropdown > .text > .image {
+.ui.dropdownsemantic > .text > .icon,
+.ui.dropdownsemantic > .text > .label,
+.ui.dropdownsemantic > .text > .flag,
+.ui.dropdownsemantic > .text > img,
+.ui.dropdownsemantic > .text > .image {
   margin-top: 0em;
 }
 
-.ui.dropdown .menu > .item > .icon,
-.ui.dropdown .menu > .item > .label,
-.ui.dropdown .menu > .item > .flag,
-.ui.dropdown .menu > .item > .image,
-.ui.dropdown .menu > .item > img {
+.ui.dropdownsemantic .menu > .item > .icon,
+.ui.dropdownsemantic .menu > .item > .label,
+.ui.dropdownsemantic .menu > .item > .flag,
+.ui.dropdownsemantic .menu > .item > .image,
+.ui.dropdownsemantic .menu > .item > img {
   margin-top: 0em;
 }
 
-.ui.dropdown > .text > .icon,
-.ui.dropdown > .text > .label,
-.ui.dropdown > .text > .flag,
-.ui.dropdown > .text > img,
-.ui.dropdown > .text > .image,
-.ui.dropdown .menu > .item > .icon,
-.ui.dropdown .menu > .item > .label,
-.ui.dropdown .menu > .item > .flag,
-.ui.dropdown .menu > .item > .image,
-.ui.dropdown .menu > .item > img {
+.ui.dropdownsemantic > .text > .icon,
+.ui.dropdownsemantic > .text > .label,
+.ui.dropdownsemantic > .text > .flag,
+.ui.dropdownsemantic > .text > img,
+.ui.dropdownsemantic > .text > .image,
+.ui.dropdownsemantic .menu > .item > .icon,
+.ui.dropdownsemantic .menu > .item > .label,
+.ui.dropdownsemantic .menu > .item > .flag,
+.ui.dropdownsemantic .menu > .item > .image,
+.ui.dropdownsemantic .menu > .item > img {
   margin-left: 0em;
   float: none;
   margin-right: 0.78571429rem;
@@ -29477,10 +29477,10 @@ body.dimmable > .dimmer {
      Image
 ---------------*/
 
-.ui.dropdown > .text > img,
-.ui.dropdown > .text > .image,
-.ui.dropdown .menu > .item > .image,
-.ui.dropdown .menu > .item > img {
+.ui.dropdownsemantic > .text > img,
+.ui.dropdownsemantic > .text > .image,
+.ui.dropdownsemantic .menu > .item > .image,
+.ui.dropdownsemantic .menu > .item > img {
   display: inline-block;
   vertical-align: middle;
   width: auto;
@@ -29497,22 +29497,22 @@ body.dimmable > .dimmer {
 
 /* Remove Menu Item Divider */
 
-.ui.dropdown .ui.menu > .item:before,
-.ui.menu .ui.dropdown .menu > .item:before {
+.ui.dropdownsemantic .ui.menu > .item:before,
+.ui.menu .ui.dropdownsemantic .menu > .item:before {
   display: none;
 }
 
 /* Prevent Menu Item Border */
 
-.ui.menu .ui.dropdown .menu .active.item {
+.ui.menu .ui.dropdownsemantic .menu .active.item {
   border-left: none;
 }
 
-/* Automatically float dropdown menu right on last menu item */
+/* Automatically float dropdownsemantic menu right on last menu item */
 
-.ui.menu .right.menu .dropdown:last-child .menu,
-.ui.menu .right.dropdown.item .menu,
-.ui.buttons > .ui.dropdown:last-child .menu {
+.ui.menu .right.menu .dropdownsemantic:last-child .menu,
+.ui.menu .right.dropdownsemantic.item .menu,
+.ui.buttons > .ui.dropdownsemantic:last-child .menu {
   left: auto;
   right: 0em;
 }
@@ -29523,7 +29523,7 @@ body.dimmable > .dimmer {
 
 /* Dropdown Menu */
 
-.ui.label.dropdown .menu {
+.ui.label.dropdownsemantic .menu {
   min-width: 100%;
 }
 
@@ -29533,11 +29533,11 @@ body.dimmable > .dimmer {
 
 /* No Margin On Icon Button */
 
-.ui.dropdown.icon.button > .dropdown.icon {
+.ui.dropdownsemantic.icon.button > .dropdownsemantic.icon {
   margin: 0em;
 }
 
-.ui.button.dropdown .menu {
+.ui.button.dropdownsemantic .menu {
   min-width: 100%;
 }
 
@@ -29551,7 +29551,7 @@ body.dimmable > .dimmer {
 
 /* Displays like a select box */
 
-.ui.selection.dropdown {
+.ui.selection.dropdownsemantic {
   cursor: pointer;
   word-wrap: break-word;
   line-height: 1em;
@@ -29572,21 +29572,21 @@ body.dimmable > .dimmer {
   transition: box-shadow 0.1s ease, width 0.1s ease;
 }
 
-.ui.selection.dropdown.visible,
-.ui.selection.dropdown.active {
+.ui.selection.dropdownsemantic.visible,
+.ui.selection.dropdownsemantic.active {
   z-index: 10;
 }
 
-select.ui.dropdown {
+select.ui.dropdownsemantic {
   height: 38px;
   padding: 0.5em;
   border: 1px solid rgba(34, 36, 38, 0.15);
   visibility: visible;
 }
 
-.ui.selection.dropdown > .search.icon,
-.ui.selection.dropdown > .delete.icon,
-.ui.selection.dropdown > .dropdown.icon {
+.ui.selection.dropdownsemantic > .search.icon,
+.ui.selection.dropdownsemantic > .delete.icon,
+.ui.selection.dropdownsemantic > .dropdownsemantic.icon {
   cursor: pointer;
   position: absolute;
   width: auto;
@@ -29604,13 +29604,13 @@ select.ui.dropdown {
 
 /* Compact */
 
-.ui.compact.selection.dropdown {
+.ui.compact.selection.dropdownsemantic {
   min-width: 0px;
 }
 
 /*  Selection Menu */
 
-.ui.selection.dropdown .menu {
+.ui.selection.dropdownsemantic .menu {
   overflow-x: hidden;
   overflow-y: auto;
   -webkit-backface-visibility: hidden;
@@ -29628,8 +29628,8 @@ select.ui.dropdown {
   transition: opacity 0.1s ease;
 }
 
-.ui.selection.dropdown .menu:after,
-.ui.selection.dropdown .menu:before {
+.ui.selection.dropdownsemantic .menu:after,
+.ui.selection.dropdownsemantic .menu:before {
   display: none;
 }
 
@@ -29637,37 +29637,37 @@ select.ui.dropdown {
     Message
 ---------------*/
 
-.ui.selection.dropdown .menu > .message {
+.ui.selection.dropdownsemantic .menu > .message {
   padding: 0.78571429rem 1.14285714rem;
 }
 
 @media only screen and (max-width: 767px) {
-  .ui.selection.dropdown .menu {
+  .ui.selection.dropdownsemantic .menu {
     max-height: 8.01428571rem;
   }
 }
 
 @media only screen and (min-width: 768px) {
-  .ui.selection.dropdown .menu {
+  .ui.selection.dropdownsemantic .menu {
     max-height: 10.68571429rem;
   }
 }
 
 @media only screen and (min-width: 992px) {
-  .ui.selection.dropdown .menu {
+  .ui.selection.dropdownsemantic .menu {
     max-height: 16.02857143rem;
   }
 }
 
 @media only screen and (min-width: 1920px) {
-  .ui.selection.dropdown .menu {
+  .ui.selection.dropdownsemantic .menu {
     max-height: 21.37142857rem;
   }
 }
 
 /* Menu Item */
 
-.ui.selection.dropdown .menu > .item {
+.ui.selection.dropdownsemantic .menu > .item {
   border-top: 1px solid #FAFAFA;
   padding: 0.78571429rem 1.14285714rem !important;
   white-space: normal;
@@ -29676,83 +29676,83 @@ select.ui.dropdown {
 
 /* User Item */
 
-.ui.selection.dropdown .menu > .hidden.addition.item {
+.ui.selection.dropdownsemantic .menu > .hidden.addition.item {
   display: none;
 }
 
 /* Hover */
 
-.ui.selection.dropdown:hover {
+.ui.selection.dropdownsemantic:hover {
   border-color: rgba(34, 36, 38, 0.35);
   box-shadow: none;
 }
 
 /* Active */
 
-.ui.selection.active.dropdown {
+.ui.selection.active.dropdownsemantic {
   border-color: #96C8DA;
   box-shadow: 0px 2px 3px 0px rgba(34, 36, 38, 0.15);
 }
 
-.ui.selection.active.dropdown .menu {
+.ui.selection.active.dropdownsemantic .menu {
   border-color: #96C8DA;
   box-shadow: 0px 2px 3px 0px rgba(34, 36, 38, 0.15);
 }
 
 /* Focus */
 
-.ui.selection.dropdown:focus {
+.ui.selection.dropdownsemantic:focus {
   border-color: #96C8DA;
   box-shadow: none;
 }
 
-.ui.selection.dropdown:focus .menu {
+.ui.selection.dropdownsemantic:focus .menu {
   border-color: #96C8DA;
   box-shadow: 0px 2px 3px 0px rgba(34, 36, 38, 0.15);
 }
 
 /* Visible */
 
-.ui.selection.visible.dropdown > .text:not(.default) {
+.ui.selection.visible.dropdownsemantic > .text:not(.default) {
   font-weight: normal;
   color: rgba(0, 0, 0, 0.8);
 }
 
 /* Visible Hover */
 
-.ui.selection.active.dropdown:hover {
+.ui.selection.active.dropdownsemantic:hover {
   border-color: #96C8DA;
   box-shadow: 0px 2px 3px 0px rgba(34, 36, 38, 0.15);
 }
 
-.ui.selection.active.dropdown:hover .menu {
+.ui.selection.active.dropdownsemantic:hover .menu {
   border-color: #96C8DA;
   box-shadow: 0px 2px 3px 0px rgba(34, 36, 38, 0.15);
 }
 
 /* Dropdown Icon */
 
-.ui.active.selection.dropdown > .dropdown.icon,
-.ui.visible.selection.dropdown > .dropdown.icon {
+.ui.active.selection.dropdownsemantic > .dropdownsemantic.icon,
+.ui.visible.selection.dropdownsemantic > .dropdownsemantic.icon {
   opacity: 1;
   z-index: 3;
 }
 
 /* Connecting Border */
 
-.ui.active.selection.dropdown {
+.ui.active.selection.dropdownsemantic {
   border-bottom-left-radius: 0em !important;
   border-bottom-right-radius: 0em !important;
 }
 
 /* Empty Connecting Border */
 
-.ui.active.empty.selection.dropdown {
+.ui.active.empty.selection.dropdownsemantic {
   border-radius: 0.28571429rem !important;
   box-shadow: none !important;
 }
 
-.ui.active.empty.selection.dropdown .menu {
+.ui.active.empty.selection.dropdownsemantic .menu {
   border: none !important;
   box-shadow: none !important;
 }
@@ -29763,13 +29763,13 @@ select.ui.dropdown {
 
 /* Search Selection */
 
-.ui.search.dropdown {
+.ui.search.dropdownsemantic {
   min-width: '';
 }
 
 /* Search Dropdown */
 
-.ui.search.dropdown > input.search {
+.ui.search.dropdownsemantic > input.search {
   background: none transparent !important;
   border: none !important;
   box-shadow: none !important;
@@ -29784,12 +29784,12 @@ select.ui.dropdown {
 
 /* Text Layering */
 
-.ui.search.dropdown > input.search {
+.ui.search.dropdownsemantic > input.search {
   position: absolute;
   z-index: 2;
 }
 
-.ui.search.dropdown > .text {
+.ui.search.dropdownsemantic > .text {
   cursor: text;
   position: relative;
   left: 1px;
@@ -29798,14 +29798,14 @@ select.ui.dropdown {
 
 /* Search Selection */
 
-.ui.search.selection.dropdown > input.search {
+.ui.search.selection.dropdownsemantic > input.search {
   line-height: 1.21428571em;
   padding: 0.67857143em 2.1em 0.67857143em 1em;
 }
 
 /* Used to size multi select input to character width */
 
-.ui.search.selection.dropdown > span.sizer {
+.ui.search.selection.dropdownsemantic > span.sizer {
   line-height: 1.21428571em;
   padding: 0.67857143em 2.1em 0.67857143em 1em;
   display: none;
@@ -29814,30 +29814,30 @@ select.ui.dropdown {
 
 /* Active/Visible Search */
 
-.ui.search.dropdown.active > input.search,
-.ui.search.dropdown.visible > input.search {
+.ui.search.dropdownsemantic.active > input.search,
+.ui.search.dropdownsemantic.visible > input.search {
   cursor: auto;
 }
 
-.ui.search.dropdown.active > .text,
-.ui.search.dropdown.visible > .text {
+.ui.search.dropdownsemantic.active > .text,
+.ui.search.dropdownsemantic.visible > .text {
   pointer-events: none;
 }
 
 /* Filtered Text */
 
-.ui.active.search.dropdown input.search:focus + .text .icon,
-.ui.active.search.dropdown input.search:focus + .text .flag {
+.ui.active.search.dropdownsemantic input.search:focus + .text .icon,
+.ui.active.search.dropdownsemantic input.search:focus + .text .flag {
   opacity: 0.45;
 }
 
-.ui.active.search.dropdown input.search:focus + .text {
+.ui.active.search.dropdownsemantic input.search:focus + .text {
   color: rgba(115, 115, 115, 0.87) !important;
 }
 
 /* Search Menu */
 
-.ui.search.dropdown .menu {
+.ui.search.dropdownsemantic .menu {
   overflow-x: hidden;
   overflow-y: auto;
   -webkit-backface-visibility: hidden;
@@ -29846,25 +29846,25 @@ select.ui.dropdown {
 }
 
 @media only screen and (max-width: 767px) {
-  .ui.search.dropdown .menu {
+  .ui.search.dropdownsemantic .menu {
     max-height: 8.01428571rem;
   }
 }
 
 @media only screen and (min-width: 768px) {
-  .ui.search.dropdown .menu {
+  .ui.search.dropdownsemantic .menu {
     max-height: 10.68571429rem;
   }
 }
 
 @media only screen and (min-width: 992px) {
-  .ui.search.dropdown .menu {
+  .ui.search.dropdownsemantic .menu {
     max-height: 16.02857143rem;
   }
 }
 
 @media only screen and (min-width: 1920px) {
-  .ui.search.dropdown .menu {
+  .ui.search.dropdownsemantic .menu {
     max-height: 21.37142857rem;
   }
 }
@@ -29875,24 +29875,24 @@ select.ui.dropdown {
 
 /* Multiple Selection */
 
-.ui.multiple.dropdown {
+.ui.multiple.dropdownsemantic {
   padding: 0.22619048em 2.1em 0.22619048em 0.35714286em;
 }
 
-.ui.multiple.dropdown .menu {
+.ui.multiple.dropdownsemantic .menu {
   cursor: auto;
 }
 
 /* Multiple Search Selection */
 
-.ui.multiple.search.dropdown,
-.ui.multiple.search.dropdown > input.search {
+.ui.multiple.search.dropdownsemantic,
+.ui.multiple.search.dropdownsemantic > input.search {
   cursor: text;
 }
 
 /* Selection Label */
 
-.ui.multiple.dropdown > .label {
+.ui.multiple.dropdownsemantic > .label {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -29908,14 +29908,14 @@ select.ui.dropdown {
 
 /* Dropdown Icon */
 
-.ui.multiple.dropdown .dropdown.icon {
+.ui.multiple.dropdownsemantic .dropdownsemantic.icon {
   margin: '';
   padding: '';
 }
 
 /* Text */
 
-.ui.multiple.dropdown > .text {
+.ui.multiple.dropdownsemantic > .text {
   position: static;
   padding: 0;
   max-width: 100%;
@@ -29923,11 +29923,11 @@ select.ui.dropdown {
   line-height: 1.21428571em;
 }
 
-.ui.multiple.dropdown > .label ~ input.search {
+.ui.multiple.dropdownsemantic > .label ~ input.search {
   margin-left: 0.14285714em !important;
 }
 
-.ui.multiple.dropdown > .label ~ .text {
+.ui.multiple.dropdownsemantic > .label ~ .text {
   display: none;
 }
 
@@ -29937,7 +29937,7 @@ select.ui.dropdown {
 
 /* Prompt Text */
 
-.ui.multiple.search.dropdown > .text {
+.ui.multiple.search.dropdownsemantic > .text {
   display: inline-block;
   position: absolute;
   top: 0;
@@ -29947,13 +29947,13 @@ select.ui.dropdown {
   line-height: 1.21428571em;
 }
 
-.ui.multiple.search.dropdown > .label ~ .text {
+.ui.multiple.search.dropdownsemantic > .label ~ .text {
   display: none;
 }
 
 /* Search */
 
-.ui.multiple.search.dropdown > input.search {
+.ui.multiple.search.dropdownsemantic > input.search {
   position: static;
   padding: 0;
   max-width: 100%;
@@ -29966,22 +29966,22 @@ select.ui.dropdown {
      Inline
 ---------------*/
 
-.ui.inline.dropdown {
+.ui.inline.dropdownsemantic {
   cursor: pointer;
   display: inline-block;
   color: inherit;
 }
 
-.ui.inline.dropdown .dropdown.icon {
+.ui.inline.dropdownsemantic .dropdownsemantic.icon {
   margin: 0em 0.5em 0em 0.21428571em;
   vertical-align: baseline;
 }
 
-.ui.inline.dropdown > .text {
+.ui.inline.dropdownsemantic > .text {
   font-weight: bold;
 }
 
-.ui.inline.dropdown .menu {
+.ui.inline.dropdownsemantic .menu {
   cursor: auto;
   margin-top: 0.21428571em;
   border-radius: 0.28571429rem;
@@ -29997,7 +29997,7 @@ select.ui.dropdown {
 
 /* Menu Item Active */
 
-.ui.dropdown .menu .active.item {
+.ui.dropdownsemantic .menu .active.item {
   background: transparent;
   font-weight: bold;
   color: rgba(0, 0, 0, 0.95);
@@ -30011,7 +30011,7 @@ select.ui.dropdown {
 
 /* Menu Item Hover */
 
-.ui.dropdown .menu > .item:hover {
+.ui.dropdownsemantic .menu > .item:hover {
   background: rgba(0, 0, 0, 0.05);
   color: rgba(0, 0, 0, 0.95);
   z-index: 13;
@@ -30021,12 +30021,12 @@ select.ui.dropdown {
        Loading
 ---------------------*/
 
-.ui.loading.dropdown > i.icon {
+.ui.loading.dropdownsemantic > i.icon {
   height: 1em !important;
   padding: 1.14285714em 1.07142857em !important;
 }
 
-.ui.loading.dropdown > i.icon:before {
+.ui.loading.dropdownsemantic > i.icon:before {
   position: absolute;
   content: '';
   top: 50%;
@@ -30038,7 +30038,7 @@ select.ui.dropdown {
   border: 0.2em solid rgba(0, 0, 0, 0.1);
 }
 
-.ui.loading.dropdown > i.icon:after {
+.ui.loading.dropdownsemantic > i.icon:after {
   position: absolute;
   content: '';
   top: 50%;
@@ -30047,8 +30047,8 @@ select.ui.dropdown {
   margin: -0.64285714em 0em 0em -0.64285714em;
   width: 1.28571429em;
   height: 1.28571429em;
-  -webkit-animation: dropdown-spin 0.6s linear;
-  animation: dropdown-spin 0.6s linear;
+  -webkit-animation: dropdownsemantic-spin 0.6s linear;
+  animation: dropdownsemantic-spin 0.6s linear;
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
   border-radius: 500rem;
@@ -30059,12 +30059,12 @@ select.ui.dropdown {
 
 /* Coupling */
 
-.ui.loading.dropdown.button > i.icon:before,
-.ui.loading.dropdown.button > i.icon:after {
+.ui.loading.dropdownsemantic.button > i.icon:before,
+.ui.loading.dropdownsemantic.button > i.icon:after {
   display: none;
 }
 
-@-webkit-keyframes dropdown-spin {
+@-webkit-keyframes dropdownsemantic-spin {
   from {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
@@ -30076,7 +30076,7 @@ select.ui.dropdown {
   }
 }
 
-@keyframes dropdown-spin {
+@keyframes dropdownsemantic-spin {
   from {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
@@ -30092,13 +30092,13 @@ select.ui.dropdown {
      Default Text
 ----------------------*/
 
-.ui.dropdown:not(.button) > .default.text,
-.ui.default.dropdown:not(.button) > .text {
+.ui.dropdownsemantic:not(.button) > .default.text,
+.ui.default.dropdownsemantic:not(.button) > .text {
   color: rgba(191, 191, 191, 0.87);
 }
 
-.ui.dropdown:not(.button) > input:focus + .default.text,
-.ui.default.dropdown:not(.button) > input:focus + .text {
+.ui.dropdownsemantic:not(.button) > input:focus + .default.text,
+.ui.default.dropdownsemantic:not(.button) > input:focus + .text {
   color: rgba(115, 115, 115, 0.87);
 }
 
@@ -30106,14 +30106,14 @@ select.ui.dropdown {
         Loading
 ----------------------*/
 
-.ui.loading.dropdown > .text {
+.ui.loading.dropdownsemantic > .text {
   -webkit-transition: none;
   transition: none;
 }
 
 /* Used To Check Position */
 
-.ui.dropdown .loading.menu {
+.ui.dropdownsemantic .loading.menu {
   display: block;
   visibility: hidden;
   z-index: -1;
@@ -30125,8 +30125,8 @@ select.ui.dropdown {
 
 /* Selected Item */
 
-.ui.dropdown.selected,
-.ui.dropdown .menu .selected.item {
+.ui.dropdownsemantic.selected,
+.ui.dropdownsemantic .menu .selected.item {
   background: rgba(0, 0, 0, 0.03);
   color: rgba(0, 0, 0, 0.95);
 }
@@ -30137,11 +30137,11 @@ select.ui.dropdown {
 
 /* Filtered Item */
 
-.ui.dropdown > .filtered.text {
+.ui.dropdownsemantic > .filtered.text {
   visibility: hidden;
 }
 
-.ui.dropdown .filtered.item {
+.ui.dropdownsemantic .filtered.item {
   display: none !important;
 }
 
@@ -30149,43 +30149,43 @@ select.ui.dropdown {
         Error
 ----------------------*/
 
-.ui.dropdown.error,
-.ui.dropdown.error > .text,
-.ui.dropdown.error > .default.text {
+.ui.dropdownsemantic.error,
+.ui.dropdownsemantic.error > .text,
+.ui.dropdownsemantic.error > .default.text {
   color: #9F3A38;
 }
 
-.ui.selection.dropdown.error {
+.ui.selection.dropdownsemantic.error {
   background: #FFF6F6;
   border-color: #E0B4B4;
 }
 
-.ui.selection.dropdown.error:hover {
+.ui.selection.dropdownsemantic.error:hover {
   border-color: #E0B4B4;
 }
 
-.ui.dropdown.error > .menu,
-.ui.dropdown.error > .menu .menu {
+.ui.dropdownsemantic.error > .menu,
+.ui.dropdownsemantic.error > .menu .menu {
   border-color: #E0B4B4;
 }
 
-.ui.dropdown.error > .menu > .item {
+.ui.dropdownsemantic.error > .menu > .item {
   color: #9F3A38;
 }
 
-.ui.multiple.selection.error.dropdown > .label {
+.ui.multiple.selection.error.dropdownsemantic > .label {
   border-color: #E0B4B4;
 }
 
 /* Item Hover */
 
-.ui.dropdown.error > .menu > .item:hover {
+.ui.dropdownsemantic.error > .menu > .item:hover {
   background-color: #FFF2F2;
 }
 
 /* Item Active */
 
-.ui.dropdown.error > .menu .active.item {
+.ui.dropdownsemantic.error > .menu .active.item {
   background-color: #FDCFCF;
 }
 
@@ -30195,8 +30195,8 @@ select.ui.dropdown {
 
 /* Disabled */
 
-.ui.disabled.dropdown,
-.ui.dropdown .menu > .disabled.item {
+.ui.disabled.dropdownsemantic,
+.ui.dropdownsemantic .menu > .disabled.item {
   cursor: default;
   pointer-events: none;
   opacity: 0.45;
@@ -30212,14 +30212,14 @@ select.ui.dropdown {
 
 /* Flyout Direction */
 
-.ui.dropdown .menu {
+.ui.dropdownsemantic .menu {
   left: 0px;
 }
 
 /* Default Side (Right) */
 
-.ui.dropdown .right.menu > .menu,
-.ui.dropdown .menu .right.menu {
+.ui.dropdownsemantic .right.menu > .menu,
+.ui.dropdownsemantic .menu .right.menu {
   left: 100% !important;
   right: auto !important;
   border-radius: 0.28571429rem !important;
@@ -30227,29 +30227,29 @@ select.ui.dropdown {
 
 /* Left Flyout Menu */
 
-.ui.dropdown > .left.menu .menu,
-.ui.dropdown .menu .left.menu {
+.ui.dropdownsemantic > .left.menu .menu,
+.ui.dropdownsemantic .menu .left.menu {
   left: auto !important;
   right: 100% !important;
   border-radius: 0.28571429rem !important;
 }
 
-.ui.dropdown .item .left.dropdown.icon,
-.ui.dropdown .left.menu .item .dropdown.icon {
+.ui.dropdownsemantic .item .left.dropdownsemantic.icon,
+.ui.dropdownsemantic .left.menu .item .dropdownsemantic.icon {
   width: auto;
   float: left;
   margin: 0em 0.78571429rem 0em 0em;
 }
 
-.ui.dropdown .item .left.dropdown.icon,
-.ui.dropdown .left.menu .item .dropdown.icon {
+.ui.dropdownsemantic .item .left.dropdownsemantic.icon,
+.ui.dropdownsemantic .left.menu .item .dropdownsemantic.icon {
   width: auto;
   float: left;
   margin: 0em 0.78571429rem 0em 0em;
 }
 
-.ui.dropdown .item .left.dropdown.icon + .text,
-.ui.dropdown .left.menu .item .dropdown.icon + .text {
+.ui.dropdownsemantic .item .left.dropdownsemantic.icon + .text,
+.ui.dropdownsemantic .left.menu .item .dropdownsemantic.icon + .text {
   margin-left: 1em;
 }
 
@@ -30259,7 +30259,7 @@ select.ui.dropdown {
 
 /* Upward Main Menu */
 
-.ui.upward.dropdown > .menu {
+.ui.upward.dropdownsemantic > .menu {
   top: auto;
   bottom: 100%;
   box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.08);
@@ -30268,54 +30268,54 @@ select.ui.dropdown {
 
 /* Upward Sub Menu */
 
-.ui.dropdown .upward.menu {
+.ui.dropdownsemantic .upward.menu {
   top: auto !important;
   bottom: 0 !important;
 }
 
 /* Active Upward */
 
-.ui.simple.upward.active.dropdown,
-.ui.simple.upward.dropdown:hover {
+.ui.simple.upward.active.dropdownsemantic,
+.ui.simple.upward.dropdownsemantic:hover {
   border-radius: 0.28571429rem 0.28571429rem 0em 0em !important;
 }
 
-.ui.upward.dropdown.button:not(.pointing):not(.floating).active {
+.ui.upward.dropdownsemantic.button:not(.pointing):not(.floating).active {
   border-radius: 0.28571429rem 0.28571429rem 0em 0em;
 }
 
 /* Selection */
 
-.ui.upward.selection.dropdown .menu {
+.ui.upward.selection.dropdownsemantic .menu {
   border-top-width: 1px !important;
   border-bottom-width: 0px !important;
   box-shadow: 0px -2px 3px 0px rgba(0, 0, 0, 0.08);
 }
 
-.ui.upward.selection.dropdown:hover {
+.ui.upward.selection.dropdownsemantic:hover {
   box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.05);
 }
 
 /* Active Upward */
 
-.ui.active.upward.selection.dropdown {
+.ui.active.upward.selection.dropdownsemantic {
   border-radius: 0em 0em 0.28571429rem 0.28571429rem !important;
 }
 
 /* Visible Upward */
 
-.ui.upward.selection.dropdown.visible {
+.ui.upward.selection.dropdownsemantic.visible {
   box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.08);
   border-radius: 0em 0em 0.28571429rem 0.28571429rem !important;
 }
 
 /* Visible Hover Upward */
 
-.ui.upward.active.selection.dropdown:hover {
+.ui.upward.active.selection.dropdownsemantic:hover {
   box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.05);
 }
 
-.ui.upward.active.selection.dropdown:hover .menu {
+.ui.upward.active.selection.dropdownsemantic:hover .menu {
   box-shadow: 0px -2px 3px 0px rgba(0, 0, 0, 0.08);
 }
 
@@ -30325,13 +30325,13 @@ select.ui.dropdown {
 
 /*  Selection Menu */
 
-.ui.scrolling.dropdown .menu,
-.ui.dropdown .scrolling.menu {
+.ui.scrolling.dropdownsemantic .menu,
+.ui.dropdownsemantic .scrolling.menu {
   overflow-x: hidden;
   overflow-y: auto;
 }
 
-.ui.scrolling.dropdown .menu {
+.ui.scrolling.dropdownsemantic .menu {
   overflow-x: hidden;
   overflow-y: auto;
   -webkit-backface-visibility: hidden;
@@ -30341,7 +30341,7 @@ select.ui.dropdown {
   width: auto !important;
 }
 
-.ui.dropdown .scrolling.menu {
+.ui.dropdownsemantic .scrolling.menu {
   position: static;
   overflow-y: auto;
   border: none;
@@ -30353,54 +30353,54 @@ select.ui.dropdown {
   border-top: 1px solid rgba(34, 36, 38, 0.15);
 }
 
-.ui.scrolling.dropdown .menu .item.item.item,
-.ui.dropdown .scrolling.menu > .item.item.item {
+.ui.scrolling.dropdownsemantic .menu .item.item.item,
+.ui.dropdownsemantic .scrolling.menu > .item.item.item {
   border-top: none;
 }
 
-.ui.scrolling.dropdown .menu .item:first-child,
-.ui.dropdown .scrolling.menu .item:first-child {
+.ui.scrolling.dropdownsemantic .menu .item:first-child,
+.ui.dropdownsemantic .scrolling.menu .item:first-child {
   border-top: none;
 }
 
-.ui.dropdown > .animating.menu .scrolling.menu,
-.ui.dropdown > .visible.menu .scrolling.menu {
+.ui.dropdownsemantic > .animating.menu .scrolling.menu,
+.ui.dropdownsemantic > .visible.menu .scrolling.menu {
   display: block;
 }
 
 /* Scrollbar in IE */
 
 @media all and (-ms-high-contrast: none) {
-  .ui.scrolling.dropdown .menu,
-  .ui.dropdown .scrolling.menu {
+  .ui.scrolling.dropdownsemantic .menu,
+  .ui.dropdownsemantic .scrolling.menu {
     min-width: calc(100% -  17px );
   }
 }
 
 @media only screen and (max-width: 767px) {
-  .ui.scrolling.dropdown .menu,
-  .ui.dropdown .scrolling.menu {
+  .ui.scrolling.dropdownsemantic .menu,
+  .ui.dropdownsemantic .scrolling.menu {
     max-height: 10.28571429rem;
   }
 }
 
 @media only screen and (min-width: 768px) {
-  .ui.scrolling.dropdown .menu,
-  .ui.dropdown .scrolling.menu {
+  .ui.scrolling.dropdownsemantic .menu,
+  .ui.dropdownsemantic .scrolling.menu {
     max-height: 15.42857143rem;
   }
 }
 
 @media only screen and (min-width: 992px) {
-  .ui.scrolling.dropdown .menu,
-  .ui.dropdown .scrolling.menu {
+  .ui.scrolling.dropdownsemantic .menu,
+  .ui.dropdownsemantic .scrolling.menu {
     max-height: 20.57142857rem;
   }
 }
 
 @media only screen and (min-width: 1920px) {
-  .ui.scrolling.dropdown .menu,
-  .ui.dropdown .scrolling.menu {
+  .ui.scrolling.dropdownsemantic .menu,
+  .ui.dropdownsemantic .scrolling.menu {
     max-height: 20.57142857rem;
   }
 }
@@ -30411,12 +30411,12 @@ select.ui.dropdown {
 
 /* Displays without javascript */
 
-.ui.simple.dropdown .menu:before,
-.ui.simple.dropdown .menu:after {
+.ui.simple.dropdownsemantic .menu:before,
+.ui.simple.dropdownsemantic .menu:after {
   display: none;
 }
 
-.ui.simple.dropdown .menu {
+.ui.simple.dropdownsemantic .menu {
   position: absolute;
   display: block;
   overflow: hidden;
@@ -30428,14 +30428,14 @@ select.ui.dropdown {
   transition: opacity 0.1s ease;
 }
 
-.ui.simple.active.dropdown,
-.ui.simple.dropdown:hover {
+.ui.simple.active.dropdownsemantic,
+.ui.simple.dropdownsemantic:hover {
   border-bottom-left-radius: 0em !important;
   border-bottom-right-radius: 0em !important;
 }
 
-.ui.simple.active.dropdown > .menu,
-.ui.simple.dropdown:hover > .menu {
+.ui.simple.active.dropdownsemantic > .menu,
+.ui.simple.dropdownsemantic:hover > .menu {
   overflow: visible;
   width: auto;
   height: auto;
@@ -30443,8 +30443,8 @@ select.ui.dropdown {
   opacity: 1;
 }
 
-.ui.simple.dropdown > .menu > .item:active > .menu,
-.ui.simple.dropdown:hover > .menu > .item:hover > .menu {
+.ui.simple.dropdownsemantic > .menu > .item:active > .menu,
+.ui.simple.dropdownsemantic:hover > .menu > .item:hover > .menu {
   overflow: visible;
   width: auto;
   height: auto;
@@ -30453,7 +30453,7 @@ select.ui.dropdown {
   opacity: 1;
 }
 
-.ui.simple.disabled.dropdown:hover .menu {
+.ui.simple.disabled.dropdownsemantic:hover .menu {
   display: none;
   height: 0px;
   width: 0px;
@@ -30462,7 +30462,7 @@ select.ui.dropdown {
 
 /* Visible */
 
-.ui.simple.visible.dropdown > .menu {
+.ui.simple.visible.dropdownsemantic > .menu {
   display: block;
 }
 
@@ -30470,13 +30470,13 @@ select.ui.dropdown {
       Fluid
 ---------------*/
 
-.ui.fluid.dropdown {
+.ui.fluid.dropdownsemantic {
   display: block;
   width: 100%;
   min-width: 0em;
 }
 
-.ui.fluid.dropdown > .dropdown.icon {
+.ui.fluid.dropdownsemantic > .dropdownsemantic.icon {
   float: right;
 }
 
@@ -30484,14 +30484,14 @@ select.ui.dropdown {
     Floating
 ---------------*/
 
-.ui.floating.dropdown .menu {
+.ui.floating.dropdownsemantic .menu {
   left: 0;
   right: auto;
   box-shadow: 0px 2px 4px 0px rgba(34, 36, 38, 0.12), 0px 2px 10px 0px rgba(34, 36, 38, 0.15) !important;
   border-radius: 0.28571429rem !important;
 }
 
-.ui.floating.dropdown > .menu {
+.ui.floating.dropdownsemantic > .menu {
   margin-top: 0.5em !important;
   border-radius: 0.28571429rem !important;
 }
@@ -30500,13 +30500,13 @@ select.ui.dropdown {
      Pointing
 ---------------*/
 
-.ui.pointing.dropdown > .menu {
+.ui.pointing.dropdownsemantic > .menu {
   top: 100%;
   margin-top: 0.78571429rem;
   border-radius: 0.28571429rem;
 }
 
-.ui.pointing.dropdown > .menu:after {
+.ui.pointing.dropdownsemantic > .menu:after {
   display: block;
   position: absolute;
   pointer-events: none;
@@ -30521,7 +30521,7 @@ select.ui.dropdown {
   z-index: 2;
 }
 
-.ui.pointing.dropdown > .menu:after {
+.ui.pointing.dropdownsemantic > .menu:after {
   top: -0.25em;
   left: 50%;
   margin: 0em 0em 0em -0.25em;
@@ -30529,7 +30529,7 @@ select.ui.dropdown {
 
 /* Top Left Pointing */
 
-.ui.top.left.pointing.dropdown > .menu {
+.ui.top.left.pointing.dropdownsemantic > .menu {
   top: 100%;
   bottom: auto;
   left: 0%;
@@ -30537,7 +30537,7 @@ select.ui.dropdown {
   margin: 1em 0em 0em;
 }
 
-.ui.top.left.pointing.dropdown > .menu {
+.ui.top.left.pointing.dropdownsemantic > .menu {
   top: 100%;
   bottom: auto;
   left: 0%;
@@ -30545,7 +30545,7 @@ select.ui.dropdown {
   margin: 1em 0em 0em;
 }
 
-.ui.top.left.pointing.dropdown > .menu:after {
+.ui.top.left.pointing.dropdownsemantic > .menu:after {
   top: -0.25em;
   left: 1em;
   right: auto;
@@ -30556,7 +30556,7 @@ select.ui.dropdown {
 
 /* Top Right  Pointing */
 
-.ui.top.right.pointing.dropdown > .menu {
+.ui.top.right.pointing.dropdownsemantic > .menu {
   top: 100%;
   bottom: auto;
   right: 0%;
@@ -30564,7 +30564,7 @@ select.ui.dropdown {
   margin: 1em 0em 0em;
 }
 
-.ui.top.right.pointing.dropdown > .menu:after {
+.ui.top.right.pointing.dropdownsemantic > .menu:after {
   top: -0.25em;
   left: auto;
   right: 1em;
@@ -30575,14 +30575,14 @@ select.ui.dropdown {
 
 /* Left Pointing */
 
-.ui.left.pointing.dropdown > .menu {
+.ui.left.pointing.dropdownsemantic > .menu {
   top: 0%;
   left: 100%;
   right: auto;
   margin: 0em 0em 0em 1em;
 }
 
-.ui.left.pointing.dropdown > .menu:after {
+.ui.left.pointing.dropdownsemantic > .menu:after {
   top: 1em;
   left: -0.25em;
   margin: 0em 0em 0em 0em;
@@ -30592,14 +30592,14 @@ select.ui.dropdown {
 
 /* Right Pointing */
 
-.ui.right.pointing.dropdown > .menu {
+.ui.right.pointing.dropdownsemantic > .menu {
   top: 0%;
   left: auto;
   right: 100%;
   margin: 0em 1em 0em 0em;
 }
 
-.ui.right.pointing.dropdown > .menu:after {
+.ui.right.pointing.dropdownsemantic > .menu:after {
   top: 1em;
   left: auto;
   right: -0.25em;
@@ -30610,7 +30610,7 @@ select.ui.dropdown {
 
 /* Bottom Pointing */
 
-.ui.bottom.pointing.dropdown > .menu {
+.ui.bottom.pointing.dropdownsemantic > .menu {
   top: auto;
   bottom: 100%;
   left: 0%;
@@ -30618,7 +30618,7 @@ select.ui.dropdown {
   margin: 0em 0em 1em;
 }
 
-.ui.bottom.pointing.dropdown > .menu:after {
+.ui.bottom.pointing.dropdownsemantic > .menu:after {
   top: auto;
   bottom: -0.25em;
   right: auto;
@@ -30629,47 +30629,47 @@ select.ui.dropdown {
 
 /* Reverse Sub-Menu Direction */
 
-.ui.bottom.pointing.dropdown > .menu .menu {
+.ui.bottom.pointing.dropdownsemantic > .menu .menu {
   top: auto !important;
   bottom: 0px !important;
 }
 
 /* Bottom Left */
 
-.ui.bottom.left.pointing.dropdown > .menu {
+.ui.bottom.left.pointing.dropdownsemantic > .menu {
   left: 0%;
   right: auto;
 }
 
-.ui.bottom.left.pointing.dropdown > .menu:after {
+.ui.bottom.left.pointing.dropdownsemantic > .menu:after {
   left: 1em;
   right: auto;
 }
 
 /* Bottom Right */
 
-.ui.bottom.right.pointing.dropdown > .menu {
+.ui.bottom.right.pointing.dropdownsemantic > .menu {
   right: 0%;
   left: auto;
 }
 
-.ui.bottom.right.pointing.dropdown > .menu:after {
+.ui.bottom.right.pointing.dropdownsemantic > .menu:after {
   left: auto;
   right: 1em;
 }
 
 /* Upward pointing */
 
-.ui.upward.pointing.dropdown > .menu,
-.ui.upward.top.pointing.dropdown > .menu {
+.ui.upward.pointing.dropdownsemantic > .menu,
+.ui.upward.top.pointing.dropdownsemantic > .menu {
   top: auto;
   bottom: 100%;
   margin: 0em 0em 0.78571429rem;
   border-radius: 0.28571429rem;
 }
 
-.ui.upward.pointing.dropdown > .menu:after,
-.ui.upward.top.pointing.dropdown > .menu:after {
+.ui.upward.pointing.dropdownsemantic > .menu:after,
+.ui.upward.top.pointing.dropdownsemantic > .menu:after {
   top: 100%;
   bottom: auto;
   box-shadow: 1px 1px 0px 1px rgba(34, 36, 38, 0.15);
@@ -30678,13 +30678,13 @@ select.ui.dropdown {
 
 /* Right Pointing Upward */
 
-.ui.upward.right.pointing.dropdown:not(.top):not(.bottom) > .menu {
+.ui.upward.right.pointing.dropdownsemantic:not(.top):not(.bottom) > .menu {
   top: auto;
   bottom: 0;
   margin: 0em 1em 0em 0em;
 }
 
-.ui.upward.right.pointing.dropdown:not(.top):not(.bottom) > .menu:after {
+.ui.upward.right.pointing.dropdownsemantic:not(.top):not(.bottom) > .menu:after {
   top: auto;
   bottom: 0;
   margin: 0em 0em 1em 0em;
@@ -30693,13 +30693,13 @@ select.ui.dropdown {
 
 /* Left Pointing Upward */
 
-.ui.upward.left.pointing.dropdown:not(.top):not(.bottom) > .menu {
+.ui.upward.left.pointing.dropdownsemantic:not(.top):not(.bottom) > .menu {
   top: auto;
   bottom: 0;
   margin: 0em 0em 0em 1em;
 }
 
-.ui.upward.left.pointing.dropdown:not(.top):not(.bottom) > .menu:after {
+.ui.upward.left.pointing.dropdownsemantic:not(.top):not(.bottom) > .menu:after {
   top: auto;
   bottom: 0;
   margin: 0em 0em 1em 0em;
@@ -30719,7 +30719,7 @@ select.ui.dropdown {
   font-style: normal;
 }
 
-.ui.dropdown > .dropdown.icon {
+.ui.dropdownsemantic > .dropdownsemantic.icon {
   font-family: 'Dropdown';
   line-height: 1;
   height: 1em;
@@ -30731,42 +30731,42 @@ select.ui.dropdown {
   text-align: center;
 }
 
-.ui.dropdown > .dropdown.icon {
+.ui.dropdownsemantic > .dropdownsemantic.icon {
   width: auto;
 }
 
-.ui.dropdown > .dropdown.icon:before {
+.ui.dropdownsemantic > .dropdownsemantic.icon:before {
   content: '\f0d7';
 }
 
 /* Sub Menu */
 
-.ui.dropdown .menu .item .dropdown.icon:before {
+.ui.dropdownsemantic .menu .item .dropdownsemantic.icon:before {
   content: '\f0da' ;
 }
 
-.ui.dropdown .item .left.dropdown.icon:before,
-.ui.dropdown .left.menu .item .dropdown.icon:before {
+.ui.dropdownsemantic .item .left.dropdownsemantic.icon:before,
+.ui.dropdownsemantic .left.menu .item .dropdownsemantic.icon:before {
   content: "\f0d9" ;
 }
 
 /* Vertical Menu Dropdown */
 
-.ui.vertical.menu .dropdown.item > .dropdown.icon:before {
+.ui.vertical.menu .dropdownsemantic.item > .dropdownsemantic.icon:before {
   content: "\f0da" ;
 }
 
 /* Icons for Reference
-.dropdown.down.icon {
+.dropdownsemantic.down.icon {
   content: "\f0d7";
 }
-.dropdown.up.icon {
+.dropdownsemantic.up.icon {
   content: "\f0d8";
 }
-.dropdown.left.icon {
+.dropdownsemantic.left.icon {
   content: "\f0d9";
 }
-.dropdown.icon.icon {
+.dropdownsemantic.icon.icon {
   content: "\f0da";
 }
 */
